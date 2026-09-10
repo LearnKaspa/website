@@ -19,7 +19,6 @@ export const metadata: Metadata = {
     title: "Learn Kaspa | The Ultimate Guide to the Kaspa BlockDAG",
     description:
       "Master the Kaspa network with our open-source guide. Clear, multi-level explanations of the world's fastest Proof-of-Work cryptocurrency.",
-    // images: ["/twitter-image.png"], 
   },
 };
 
