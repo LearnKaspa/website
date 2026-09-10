@@ -14,12 +14,14 @@ export const metadata: Metadata = {
     siteName: "LearnKaspa",
     type: "website",
     locale: "en_US",
+    images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Learn Kaspa | The Ultimate Guide to the Kaspa BlockDAG",
     description:
       "Master the Kaspa network with our open-source guide. Clear, multi-level explanations of the world's fastest Proof-of-Work cryptocurrency.",
+    images: ["/og.png"],
   },
 };
 

@@ -1,15 +1,9 @@
 import { ImageResponse } from "next/og";
 
+// Tell Next.js to generate this once at build time
 export const dynamic = "force-static";
 
-export const alt = "Learn Kaspa | The BlockDAG Architecture Explained";
-export const size = {
-  width: 1200,
-  height: 630,
-};
-export const contentType = "image/png";
-
-export default async function Image() {
+export async function GET() {
   return new ImageResponse(
     (
       <div
@@ -44,7 +38,7 @@ export default async function Image() {
             left: 0,
             right: 0,
             height: "8px",
-            background: "#70C7BA", // kaspa cyan
+            background: "#70C7BA",
           }}
         />
 
@@ -89,6 +83,7 @@ export default async function Image() {
           </h2>
         </div>
 
+        {/* Footer Text */}
         <div
           style={{
             display: "flex",
@@ -105,7 +100,8 @@ export default async function Image() {
       </div>
     ),
     {
-      ...size,
+      width: 1200,
+      height: 630,
     }
   );
 }
