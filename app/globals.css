@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Base size for mobile */
+html {
+  font-size: 16px; 
+  scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Scales everything up by ~25% on standard 1080p desktop */
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px;
+    scroll-behavior: smooth;
   }
 }
 
+/* Scales everything up by ~37% on large 2K/4K screens */
+@media (min-width: 1536px) {
+  html {
+    font-size: 22px;
+    scroll-behavior: smooth;
+  }
+}
+
+@theme {
+  /* Kaspa Native Palette */
+  --color-kaspa: #70C7BA;
+  --color-kaspa-light: #8ee0d4;
+  --color-kaspa-dark: #4da89c;
+  --color-kaspa-surface: #0e1416;
+  --color-kaspa-card: #121a1d;
+  --color-kaspa-border: #1d2b2f;
+  --color-kaspa-accent: #22393d;
+
+  /* Obsidian Grays */
+  --color-obsidian-950: #060809;
+  --color-obsidian-900: #090d0e;
+  --color-obsidian-800: #0f1618;
+  --color-obsidian-700: #182226;
+
+  /* Typography */
+  --font-mono: "JetBrains Mono", "Menlo", "Courier New", monospace;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-obsidian-950);
+  background-image: 
+    linear-gradient(to right, rgba(112, 199, 186, 0.10) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(112, 199, 186, 0.10) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
