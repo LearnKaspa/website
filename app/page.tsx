@@ -771,11 +771,16 @@ export default function HomePage() {
             <div className="bg-obsidian-950 border border-obsidian-800 p-5 rounded-xl font-mono text-left md:text-right flex-shrink-0 self-start md:self-center">
               <div className="text-xs text-neutral-400">Hardware Wallet Address (KAS)</div>
               <div className="text-kaspa text-xs sm:text-sm font-bold select-all mt-1 break-all max-w-[280px]">
-                kaspa:donation_address will be provided shortly
+                kaspa:qzvg08f682cw4sdwjly70rxlmtwsxuvpzaqw4axk6j78237fxt35xu5l2xu5a
               </div>
-              <div className="text-[10px] text-neutral-500 mt-2">
+              <a 
+                href="https://kaspa.stream/addresses/kaspa:qzvg08f682cw4sdwjly70rxlmtwsxuvpzaqw4axk6j78237fxt35xu5l2xu5a" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="block text-[10px] text-neutral-500 mt-2 hover:text-kaspa transition"
+              >
                 100% auditable on the Kaspa block explorer ↗
-              </div>
+              </a>
             </div>
           </div>
       </section>
