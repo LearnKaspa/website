@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://learnkaspa.com"),
   title: "Learn Kaspa | The Ultimate Guide to the Kaspa BlockDAG",
   description:
     "Master the Kaspa network with our open-source guide. Clear, multi-level explanations of the world's fastest Proof-of-Work cryptocurrency, from beginner basics to developer deep-dives.",
